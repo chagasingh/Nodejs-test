@@ -1,16 +1,18 @@
-console.log('hellow World')
-let a=3
-let b= 4;
+const http = require('http')
 
-const product=(x,y)=>x*y;
-console.log(product(a,b))
+// function rqlistner(req,res){
 
-const student={
-    name:'ram',
-    age:22,
-    college() {
-        console.log(`${this.name} college is very good`)
-    }
-}
+// }
 
-student.college()
+// http.createServer(rqlistner);
+
+// http.createServer(function(req,res){
+
+// });
+
+const server = http.createServer((req,res)=>{
+    console.log('chagan singh')
+    console.log(req)
+});
+
+server.listen(4000)
